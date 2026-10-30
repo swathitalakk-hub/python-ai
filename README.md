@@ -2,6 +2,8 @@
 
 *EWB Courses | Python with AI | Python Project Assignment*
 
+🌐 **Live Dashboard Link:** [https://swathitalakk-hub.github.io/python-ai/](https://swathitalakk-hub.github.io/python-ai/)
+
 ---
 
 ## 1. Project Title
