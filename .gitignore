@@ -1,19 +1,6 @@
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
+*.pyc
+.venv/
 venv/
-ENV/
-.venv
-
-# IDE / OS
-.vscode/
-.idea/
+.ipynb_checkpoints/
 .DS_Store
-Thumbs.db
-
-# Output artifacts that can be regenerated
-*.log
