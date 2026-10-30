@@ -214,7 +214,13 @@ Coordinates the workflow, handles potential file/schema exceptions gracefully, a
 | `S013` | Rahul Das | Civil | 45.6 | 68% | Maths < 40 (33); Attendance < 75% |
 | `S018` | Lakshmi Prasad | Electronics | 52.4 | 73% | Attendance < 75% (Shortfall of 2%) |
 
-*Key Takeaway*: In 100% of failed cases, inadequate attendance ($< 75\%$) was a contributing factor, substantiating the high correlation metric ($r = 0.973$).
+### 7.6 Program Execution Screenshots
+
+#### Output Part 1: Dataset Overview, Pass/Grading Rules, and Student Report Card
+![Terminal Output 1](screenshots/terminal_output.png)
+
+#### Output Part 2: Statistical Summary, Subject Benchmarks, and Department Analysis
+![Terminal Output 2](screenshots/analysis_output.png)
 
 ---
 

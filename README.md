@@ -148,7 +148,13 @@ Computer_Science    73.20       99      42    16.76   100.0  Meera Nair
     5       S012 Kavya Krishnan Computer Science    435     87.0     A
 ```
 
-> You can add screenshots of your own terminal run here, for example `![Output](screenshots/output.png)`.
+### Terminal Run Screenshots
+
+#### 1. Report Card & Academic Rankings
+![Student Report Card](screenshots/terminal_output.png)
+
+#### 2. Statistical Analysis & Department Benchmark
+![Analysis Breakdown](screenshots/analysis_output.png)
 
 ---
 
