@@ -10,8 +10,8 @@
 
 | Detail | Value |
 |---|---|
-| Student Name | `<Your Name>` |
-| Email | sp6520138@gmail.com |
+| Student Name | Swathi Talak |
+| Email | swathitalak28@gmail.com |
 | Course | Python with AI, EWB Courses |
 | Submission Deadline | 15 October 2026 |
 
@@ -187,7 +187,7 @@ The results were cross-checked with a separate plain-Python calculation, and eve
 
 ## 10. GitHub Repository
 
-**Repository link:** `https://github.com/<your-username>/student-performance-analytics`
+**Repository link:** `https://github.com/swathitalakk-hub/python-ai`
 
 ---
 
@@ -195,8 +195,8 @@ The results were cross-checked with a separate plain-Python calculation, and eve
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/student-performance-analytics.git
-cd student-performance-analytics
+git clone https://github.com/swathitalakk-hub/python-ai.git
+cd python-ai
 
 # 2. Install the requirements
 pip install -r requirements.txt
