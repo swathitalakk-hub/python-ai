@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance Analytics System - Documentation Report</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0284c7;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg-alt: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #f1f5f9;
+      padding: 30px 15px;
+    }
+
+    .document-page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .no-print-bar {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    .header-section {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+
+    .super-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--secondary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .sub-title {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: var(--primary);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 15px;
+      color: #334155;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px 0;
+      font-size: 13px;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:nth-child(even) td {
+      background: var(--bg-alt);
+    }
+
+    .screenshot-box {
+      margin: 20px 0;
+      text-align: center;
+      background: #0f172a;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .screenshot-box img {
+      max-width: 100%;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .caption {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    pre, code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+    }
+
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 14px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-bottom: 16px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .no-print-bar {
+        display: none;
+      }
+      .document-page {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      @page {
+        margin: 15mm;
+      }
+      h2 {
+        page-break-after: avoid;
+      }
+      table, .screenshot-box {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar">
+    <div><strong>Student Performance Analytics System</strong> - Documentation Ready to Download & Print</div>
+    <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="document-page">
+    <div class="header-section">
+      <div class="super-title">PROJECT DOCUMENTATION REPORT</div>
+      <h1>Student Performance Analytics System</h1>
+      <div class="sub-title">EWB Courses | Python with AI Project Assignment</div>
+    </div>
+
+    <h2>1. Project Overview & Metadata</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Project Title</strong></td><td>Student Performance Analytics System</td></tr>
+        <tr><td><strong>Student Name</strong></td><td>Swathi Talak</td></tr>
+        <tr><td><strong>Email Address</strong></td><td>swathitalak28@gmail.com</td></tr>
+        <tr><td><strong>Course</strong></td><td>Python with AI (EWB Courses)</td></tr>
+        <tr><td><strong>Programming Language</strong></td><td>Python 3.13</td></tr>
+        <tr><td><strong>Primary Libraries</strong></td><td>NumPy, Pandas</td></tr>
+        <tr><td><strong>GitHub Repository</strong></td><td><a href="https://github.com/swathitalakk-hub/python-ai" target="_blank">https://github.com/swathitalakk-hub/python-ai</a></td></tr>
+        <tr><td><strong>Operating System</strong></td><td>Windows 11 / Cross-Platform</td></tr>
+      </tbody>
+    </table>
+
+    <h2>2. Abstract & Problem Statement</h2>
+    <h3>2.1 The Problem</h3>
+    <p>In modern academic institutions, faculty members frequently manage large volumes of raw examination and attendance data across multiple courses and departments. Evaluating performance manually using conventional spreadsheets or hand calculations is time-consuming, prone to human calculation errors, and fails to provide instantaneous diagnostic insights such as:</p>
+    <ul>
+      <li>Which subject exhibits the lowest average score and requires syllabus review?</li>
+      <li>How strongly does attendance correlate with student examination performance?</li>
+      <li>What are the precise root causes behind individual student failures?</li>
+      <li>How do different academic departments compare in student pass percentage?</li>
+    </ul>
+
+    <h3>2.2 The Solution</h3>
+    <p>The <strong>Student Performance Analytics System</strong> is a modular Python application powered by <strong>NumPy</strong> and <strong>Pandas</strong>. It automates data ingestion, vectorized calculations, transparent academic grading, ranking, and multi-dimensional statistical summaries.</p>
+
+    <h2>3. Dataset Specification</h2>
+    <p>File: <code>students.csv</code> with 20 student records across 4 academic departments (Computer Science, Electronics, Mechanical, Civil), 5 students each.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Data Type</th>
+          <th>Constraints / Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>Student_ID</code></td><td>String</td><td>Unique identifier format (S001 - S020)</td></tr>
+        <tr><td><code>Name</code></td><td>String</td><td>Full student name</td></tr>
+        <tr><td><code>Department</code></td><td>Categorical</td><td>Academic department</td></tr>
+        <tr><td><code>Maths</code> - <code>Computer_Science</code></td><td>Integer</td><td>Marks obtained out of 100 (0 to 100)</td></tr>
+        <tr><td><code>Attendance</code></td><td>Integer</td><td>Attendance percentage (0% to 100%)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Evaluation Criteria & Grading Logic</h2>
+    <ul>
+      <li><strong>Total & Average:</strong> Computed row-wise using NumPy 2D array matrix operations (<code>np.sum(axis=1)</code>, <code>np.mean(axis=1)</code>).</li>
+      <li><strong>Pass Condition:</strong> Score &ge; 40 in <em>every single subject</em> AND &ge; 75% attendance.</li>
+      <li><strong>Grading Scale:</strong> &ge;90 (A+), &ge;80 (A), &ge;70 (B), &ge;60 (C), &ge;50 (D), &ge;40 (E). Any student who fails the pass condition receives <strong>F</strong>.</li>
+    </ul>
+
+    <h2>5. Key Findings & Analytics Results</h2>
+    <ul>
+      <li><strong>Total Students Evaluated:</strong> 20</li>
+      <li><strong>Overall Class Average:</strong> 70.89 / 100 (Median: 72.50, Std Dev: 15.01)</li>
+      <li><strong>Overall Pass Percentage:</strong> 85.0% (17 Passed, 3 Failed)</li>
+      <li><strong>Attendance vs. Marks Correlation:</strong> 0.973 (Extremely strong positive correlation)</li>
+    </ul>
+
+    <h3>Top 5 Academic Achievers</h3>
+    <table>
+      <thead>
+        <tr><th>Rank</th><th>ID</th><th>Name</th><th>Department</th><th>Total</th><th>Average</th><th>Grade</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>S008</td><td>Meera Nair</td><td>Computer Science</td><td>471</td><td>94.20%</td><td>A+</td></tr>
+        <tr><td>2</td><td>S016</td><td>Pooja Joshi</td><td>Civil</td><td>450</td><td>90.00%</td><td>A+</td></tr>
+        <tr><td>3</td><td>S004</td><td>Ananya Iyer</td><td>Electronics</td><td>446</td><td>89.20%</td><td>A</td></tr>
+        <tr><td>4</td><td>S001</td><td>Aarav Sharma</td><td>Computer Science</td><td>440</td><td>88.00%</td><td>A</td></tr>
+        <tr><td>5</td><td>S012</td><td>Kavya Krishnan</td><td>Computer Science</td><td>435</td><td>87.00%</td><td>A</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Subject-Wise Benchmark Comparison</h3>
+    <table>
+      <thead>
+        <tr><th>Subject</th><th>Average</th><th>Highest</th><th>Lowest</th><th>Std Dev</th><th>Pass %</th><th>Topper</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>English</td><td>75.05</td><td>94</td><td>55</td><td>11.60</td><td>100.0%</td><td>Pooja Joshi (94)</td></tr>
+        <tr><td>Computer Science</td><td>73.20</td><td>99</td><td>42</td><td>16.76</td><td>100.0%</td><td>Meera Nair (99)</td></tr>
+        <tr><td>Maths</td><td>69.30</td><td>95</td><td>33</td><td>17.67</td><td>95.0%</td><td>Meera Nair (95)</td></tr>
+        <tr><td>Chemistry</td><td>68.85</td><td>92</td><td>44</td><td>15.51</td><td>100.0%</td><td>Meera Nair (92)</td></tr>
+        <tr><td>Physics</td><td>68.05</td><td>97</td><td>38</td><td>16.12</td><td>95.0%</td><td>Meera Nair (97)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Department-Wise Performance Breakdown</h3>
+    <table>
+      <thead>
+        <tr><th>Department</th><th>Students</th><th>Avg Marks</th><th>Avg Attendance</th><th>Passed</th><th>Pass %</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Computer Science</td><td>5</td><td>82.56</td><td>92.2%</td><td>5</td><td>100.0%</td></tr>
+        <tr><td>Electronics</td><td>5</td><td>71.20</td><td>86.2%</td><td>4</td><td>80.0%</td></tr>
+        <tr><td>Civil</td><td>5</td><td>66.92</td><td>83.2%</td><td>4</td><td>80.0%</td></tr>
+        <tr><td>Mechanical</td><td>5</td><td>62.88</td><td>81.6%</td><td>4</td><td>80.0%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Failure Root-Cause Diagnosis</h3>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Department</th><th>Average</th><th>Attendance</th><th>Diagnosis Reason</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>S005</td><td>Karthik Naidu</td><td>Mechanical</td><td>48.6</td><td>70%</td><td>Physics &lt; 40 (38); Attendance &lt; 75%</td></tr>
+        <tr><td>S013</td><td>Rahul Das</td><td>Civil</td><td>45.6</td><td>68%</td><td>Maths &lt; 40 (33); Attendance &lt; 75%</td></tr>
+        <tr><td>S018</td><td>Lakshmi Prasad</td><td>Electronics</td><td>52.4</td><td>73%</td><td>Attendance &lt; 75% (Shortfall of 2%)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>6. Program Execution Screenshots</h2>
+    <div class="screenshot-box">
+      <img src="screenshots/terminal_output.png" alt="Terminal Output Part 1">
+      <div class="caption">Output Part 1: Dataset Overview, Pass/Grading Rules, and Student Report Card</div>
+    </div>
+
+    <div class="screenshot-box">
+      <img src="screenshots/analysis_output.png" alt="Terminal Output Part 2">
+      <div class="caption">Output Part 2: Statistical Analytics, Subject & Department Benchmarks</div>
+    </div>
+
+    <h2>7. How to Run</h2>
+    <pre><code># 1. Clone the repository
+git clone https://github.com/swathitalakk-hub/python-ai.git
+cd python-ai
+
+# 2. Install requirements
+pip install -r requirements.txt
+
+# 3. Execute the system
+python main.py</code></pre>
+  </div>
+</body>
+</html>
